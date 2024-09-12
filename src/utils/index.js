@@ -1,4 +1,4 @@
-// utils.js
+
 export const groupTicketsByStatus = (tickets) => {
     const groups = tickets.reduce((result, ticket) => {
         if (!result[ticket.status]) {

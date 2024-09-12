@@ -13,8 +13,6 @@ export const getPriorityIcon = (priority) => {
         default: return <AiFillWarning color='#fc7840' size={14} />
     }
 }
-
-// Function to get status icon based on status
 export const getStatusIcon = (status) => {
     switch (status) {
         case "Backlog": return <BiRadioCircle color='#e2e2e2' size={24} />
