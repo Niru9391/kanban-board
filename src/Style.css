@@ -1,0 +1,85 @@
+/* src/App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.kanban-board {
+  display: flex;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.group-by-user .kanban-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-by-user .kanban-cards {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for cards */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.kanban-column {
+  min-width: 250px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow columns to grow */
+}
+
+.kanban-cards {
+  display: flex;
+  flex-direction: column; /* Default vertical layout */
+  gap: 10px;
+}
+
+.kanban-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s;
+}
+
+.kanban-card:hover {
+  transform: translateY(-5px);
+}
+
+.kanban-column h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.kanban-card h4 {
+  margin: 0 0 5px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.control-panel {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px; /* Space between controls */
+}
+
+.control-panel label {
+  margin-right: 10px;
+}
+
+.control-panel select {
+  padding: 5px;
+}
